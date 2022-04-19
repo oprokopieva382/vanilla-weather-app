@@ -14,8 +14,76 @@
     <title>Weather app</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Weather app</h1>
+    <div id="root">
+      <div class="app">
+        <div class="container">
+          <div class="weather">
+            <form>
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    placeholder="Enter a city..."
+                    class="form-control search-input"
+                  />
+                </div>
+                <div class="col-3 p-0">
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-100"
+                    value="Search"
+                  />
+                </div>
+              </div>
+            </form>
+            <div class="WeatherInfo">
+              <div class="row">
+                <div class="col-6">
+                  <h1>Panama City Beach</h1>
+                  <ul>
+                    <li><span>...</span>", " "clear sky"</li>
+                    <li>
+                      "Humidity: " <strong>"43" "%"</strong>", Wind:"
+                      <strong>"6.69" "km/h"</strong>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <div>
+                    <span class="temperature">17</span>
+                    <span class="unit">F°</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="WeatherForecast row">
+              <div class="col">
+                <div class="WeatherForecastPreview"></div>
+              </div>
+              <div class="col">
+                <div class="WeatherForecastPreview"></div>
+              </div>
+              <div class="col">
+                <div class="WeatherForecastPreview"></div>
+              </div>
+              <div class="col">
+                <div class="WeatherForecastPreview"></div>
+              </div>
+              <div class="col">
+                <div class="WeatherForecastPreview"></div>
+              </div>
+            </div>
+            <footer>
+              This project was coded by Ksy Fate and is
+              <a
+                href="https://github.com/oprokopieva382/vanilla-weather-app"
+                target="_blank"
+                >open-sourced on GitHub</a
+              >
+            </footer>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
